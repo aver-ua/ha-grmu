@@ -5,7 +5,6 @@
 ## 🤖 Про проєкт та розробку
 
 Всі модулі кастомного компонента (Config Flow, DataUpdateCoordinator, Sensor entity) та кастомні JS-генератори даних для `ApexCharts Card` розроблені за допомогою **Google Gemini**.
----
 
 ## 🌟 Основні можливості
 
