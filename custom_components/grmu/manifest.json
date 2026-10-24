@@ -1,0 +1,9 @@
+{
+  "domain": "grmu",
+  "name": "ГРМУ (Газорозподільні мережі України)",
+  "codeowners": ["@aver-ua"],
+  "config_flow": true,
+  "documentation": "https://my.grmu.com.ua",
+  "iot_class": "cloud_polling",
+  "version": "1.0.0"
+}
