@@ -25,7 +25,7 @@
 
 ## 🛠️ Встановлення
 
-### Спосіб 1. Встановлення вручну
+### 1. Копіювання модулів інтеграції
 
 1. Створіть директорію `grmu` у папці `/config/custom_components/` вашого Home Assistant.
 2. Скопіюйте у створену папку файли інтеграції:
@@ -37,11 +37,11 @@
    * `sensor.py`
 3. Перезапустіть Home Assistant.
 
-### Спосіб 2. Налаштування інтеграції
+### 2. Налаштування інтеграції
 
-1. У Home Assistant перейдіть до **Налаштування** → **Пристрої та служби**.
+1. У Home Assistant перейдіть до **Налаштування** → **Пристрої та сервіси**.
 2. Натисніть **Додати інтеграцію** в правому нижньому кутку.
-3. Знайдіть **ГРМУ (Газмережі)** у списку.
+3. Знайдіть **ГРМУ (Газорозподільні мережі України)** у списку.
 4. Введіть ваш Email та Пароль від особистого кабінету `my.grmu.com.ua`.
 
 ---
@@ -77,7 +77,7 @@ apex_config:
         text: кВт·год
       decimalsInFloat: 0
 series:
-  - entity: sensor.osobovii_rakhunok_0800090482_grmu_spozhivannia_za_misiats
+  - entity: sensor.osobovii_rakhunok_0000000000_grmu_spozhivannia_za_misiats
     name: Спожито (м³)
     type: column
     color: '#ff9800'
@@ -96,7 +96,7 @@ series:
         return [timestamp, Math.max(0, rawVal)];
       }).sort((a, b) => a[0] - b[0]);
 
-  - entity: sensor.osobovii_rakhunok_0800090482_grmu_spozhivannia_za_misiats
+  - entity: sensor.osobovii_rakhunok_0000000000_grmu_spozhivannia_za_misiats
     name: Енергія (кВт·год)
     type: line
     stroke_width: 2
